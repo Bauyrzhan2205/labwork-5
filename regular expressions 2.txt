@@ -1,0 +1,6 @@
+function regexVar() {
+
+    const re = new RegExp('^(Mr|Ms|Mrs|Dr|Er)\\.[A-Za-z]+$')
+
+    return re;
+}

@@ -1,0 +1,11 @@
+class Polygon {
+  constructor(lengths){
+    this.lengths = lengths
+  }
+  
+  perimeter() {
+    return this.lengths.reduce((accumulator,currentValue) => {
+      return accumulator + currentValue
+    }, 0)
+  } 
+}

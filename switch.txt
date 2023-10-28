@@ -1,0 +1,23 @@
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    const A = new Set(['a','e','i','o','u']);
+    const B = new Set(['b','c','d','f','g']);
+    const C = new Set(['h','j','k','l','m']);
+    
+    switch (true) {
+      case A.has(s[0]):
+      letter = 'A';
+      break;
+      case B.has(s[0]):
+      letter = 'B';
+      break;
+      case C.has(s[0]):
+      letter = 'C';
+      break;
+      default:
+      letter = 'D';
+      break;
+    }
+    return letter;
+}

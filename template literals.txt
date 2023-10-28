@@ -1,0 +1,8 @@
+function sides(literals, ...expressions) {
+    
+    const [area,perimeter] = expressions
+    const s1 = (perimeter + Math.sqrt(perimeter**2 - 16*area)) / 4
+    const s2 = (perimeter - Math.sqrt(perimeter**2 - 16*area)) / 4
+    const arr = [s1, s2]
+    return arr.sort((a, b) => a - b)
+}

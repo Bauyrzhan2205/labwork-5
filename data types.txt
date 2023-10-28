@@ -1,0 +1,10 @@
+function performOperation(secondInteger, secondDecimal, secondString) {
+  
+  const firstInteger = 4;
+  const firstDecimal = 4.0;
+  const fisrtString = 'HackerRank ';
+  
+  console.log(firstInteger + parseInt(secondInteger));
+  console.log(firstDecimal + parseFloat(secondDecimal));
+  console.log(fisrtString.concat(secondString));
+}
